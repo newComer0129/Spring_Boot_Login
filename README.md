@@ -1,6 +1,11 @@
-# Updated to Spring Boot 3 and Spring Security 8
-registration-login-module using springboot, spring mvc, spring security and thymeleaf
-
+Spring Boot + MySql 登入和註冊功能展示
+全部程式碼copy自以下網站
 http://www.javaguides.net/2018/10/user-registration-module-using-springboot-springmvc-springsecurity-hibernate5-thymeleaf-mysql.html
 
-#Spring Boot + MySql login and regist
+使用物件
+1. Spring Security (不太理解)
+2. JPARepoisory (讓程式開發人員方便存取資料庫的介面)
+3. mysql
+   建立資料庫login_system
+   建立資料表users users_role roles
+   
