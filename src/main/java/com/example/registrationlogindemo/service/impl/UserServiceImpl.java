@@ -53,6 +53,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<UserDto> findAllUsers() {
         List<User> users = userRepository.findAll();
+        System.out.println("users size() : " + users.size());
         return users.stream().map((user) -> convertEntityToDto(user))
                 .collect(Collectors.toList());
     }
@@ -60,6 +61,7 @@ public class UserServiceImpl implements UserService {
     private UserDto convertEntityToDto(User user){
         UserDto userDto = new UserDto();
         String[] name = user.getName().split(" ");
+        System.out.println("name.length : " +name.length);
         userDto.setFirstName(name[0]);
         userDto.setLastName(name[1]);
         userDto.setEmail(user.getEmail());
